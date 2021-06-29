@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="="UTF-8>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/style.css ">
+        <title>Latihan jQuery</title>
+    </head>
+<body>
+    <div id="app">
+        <div class="container">
+            <h1>Belajar jQuery</h1>
+
+            <div class="box-content">
+                    <div class="box-left">
+                    <h1>Click</h1>
+                    <p>Click me!</p>
+                    </div>
+
+                    <div class="box-right">
+                    <h1>Mouse Enter</h1>
+                    <p>Hover me!</p>
+                    </div>
+
+                    <div id="box-input">
+                        <input type="text" id="input_text">
+                        <div id="result"></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            const inputText = $("#input_text");
+            inputText.on("keyup",function(e){
+                const value = e.target.value;
+                $("#result").html(value);
+            })
+        })
+    </script>
+</body>
+</html>

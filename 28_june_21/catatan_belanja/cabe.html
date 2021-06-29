@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/cabe.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>CATATAN BELANJA</title>
+  </head>
+  <body>
+    <div class="app flex justify-content-center">
+      <div class="container">
+        <div>
+          <h1>CATATAN BELANJA</h1>
+        </div>
+        <section id="section-belanja-form" class="flex justify-content-center">
+          <form class="form-group">
+            <input class="form-control" name="belanja" type="text" placeholder="Apa yang Anda perlukan?" />
+
+            <button id="button-submit" class="submit-button" type="submit">Submit</button>
+          </form>
+        </section>
+        <section id="list-belanja">
+          <div id="item-belanja"></div>
+        </section>
+        <div class="delete-all">
+          <a id="remove-all" href="#">hapus semua</a>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/cabe.js"></script>
+  </body>
+</html>

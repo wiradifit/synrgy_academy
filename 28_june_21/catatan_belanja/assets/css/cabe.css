@@ -1,0 +1,72 @@
+.container {
+  margin-top: 1rem;
+  width: 70%;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.form-group {
+  width: auto;
+}
+
+.form-control {
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.submit-button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+#list-belanja {
+  width: auto;
+  padding: 1rem 2rem;
+}
+
+#item-belanja > div > p {
+  width: 80%;
+}
+
+#item-belanja > div > span {
+  width: 10%;
+  font-size: 16px;
+  align-items: center;
+}
+
+.delete-all {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.delete-all > a {
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    min-width: 300px;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
